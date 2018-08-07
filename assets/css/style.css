@@ -1,0 +1,15 @@
+/* 
+Andrew Ton
+Assignment 4 - Crazy Cat Person
+style.css  
+*/
+
+body {
+    background-image: url("../images/bg.jpg");
+
+}
+
+#pics {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}

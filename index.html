@@ -1,0 +1,92 @@
+<!-- 
+Andrew Ton
+Assignment 4 - Crazy Cat Person
+index.html 
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Crazy Cat Game</title>
+  </head>
+  <body class="container text-center bg-secondary text-info">
+    
+    <!-- Jumbotron -->
+    <div class="jumbotron container bg-dark text-info border border-secondary">
+        <h1 class="display-4">Crazy Cat Game</h1>
+        <hr class="my-4">
+        <div>
+            <p class="">You love cats. Try to obtain as many cats as you can, but if you get too many, you will become a crazy cat person and live in shame.</p>
+            <p class="">There are five cats below. By clicking a cat, you will add a certain number of cat points to your score</p>
+            <p class="">You win by matching your score to a random number. You lose if your number goes over.</p>
+            <p class="">The value of each cat is hidden from you until you clock on it</p>
+            <p class="">Each game will have a different value of points per cat</p>
+        </div>        
+    </div>
+
+    <!-- Start Grid -->
+    <div class="row"> <!-- Row for score to match and wins/losses-->
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-6 bg-dark rounded border border-secondary">
+                    Wins: <span id="winsText" class="font-weight-bold">0</span>
+                </div>
+                <div class="col-md-6 bg-dark rounded border border-secondary">
+                    Losses: <span id="lossesText" class="font-weight-bold">0</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 bg-dark rounded border  border-secondary">
+                    Crazy Critical Limit:
+                </div>
+                <div class="col-md-6 bg-dark rounded border border-secondary">
+                    Your Crazy Level:
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 rounded bg-dark border border-secondary"><span id="goalText" class="display-3 font-weight-bold">0</span></div>
+                <div class="col-md-6 rounded bg-dark border border-secondary"><span id="scoreText" class="display-3 font-weight-bold">0</span></div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div> <!-- End row for score to match and wins/losses-->
+
+    <div class="row" id="pics"> <!-- row for pics -->
+        <!-- <div class="col-md-2"></div> -->
+        <div class="col-md-3">
+            <img src="assets/images/img1.jpg" alt="cat1" id="button1" class="img-thumbnail shadow isButton">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/images/img2.jpg" alt="cat2" id="button2" class="img-thumbnail shadow isButton">
+        </div>
+        <!-- <div class="col-md-2">
+            <img src="assets/images/img3.jpg" alt="cat3" class="img-thumbnail shadow">
+        </div> -->
+        <div class="col-md-3">
+            <img src="assets/images/img4.jpg" alt="cat4" id="button3" class="img-thumbnail shadow isButton">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/images/img5.jpg" alt="cat5" id="button4" class="img-thumbnail shadow isButton">
+        </div>
+        <!-- <div class="col-md-2"></div> -->
+    </div> <!-- end row for pics -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity=""></script> -->
+    <script src="assets/javascript/game.js"></script>
+    </body>
+</html>
