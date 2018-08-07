@@ -2,7 +2,7 @@
 // Assignment 4 - Crazy Cat Person
 // game.js
 
-
+// Check that DOM is loaded
 $(document).ready(function() {
 
     // Create global variables
@@ -17,23 +17,22 @@ $(document).ready(function() {
 
     startGame(); // initial start
 
-
-
     // On-click function, adds value to score, checks for win and loss conditions
     $(".container").on("click", ".isButton", function() {
         // console.log(this.value);
         score += parseInt(this.value);
         $("#scoreText").text(score);
 
-        // Lose condition
+        // Lose condition, updates losses and restarts
         if (score > goal) {
-            alert("you lose");
+            alert("You became a crazy cat person. You lose.");
             losses++;
             $("#lossesText").text(losses);
             startGame();
         }
+        //Win condition, updates wins and restarts
         else if (score === goal) {
-            alert("you win");
+            alert("You're weird, but at least you're not crazy. You win!");
             wins++;
             $("#winsText").text(wins);
             startGame();
